@@ -1,0 +1,108 @@
+<!-- This layout is intended to give the appearance of belonging to someone who *really* likes the Bible.
+I just thought it'd be funny and would stand out a bit from all the moodier, scene-core style profiles
+that you generally see on the site. -->
+<!--  This is a latin prayer titled Credo -->
+Credo in Deum, Patrem omnipotentem, Creatorem caeli et terrae. <br/><br/>
+Et in Iesum Christum, Filium eius unicum, Dominum nostrum:<br/><br/>
+qui conceptus est de Spiritu Sancto, natus ex Maria Virgine,<br/><br/>
+passus sub Pontio Pilato, crucifixus, mortuus, et sepultus,<br/><br/>
+descendit ad inferos,<br/><br/>
+tertia die resurrexit a mortuis,<br/><br/>
+ascendit ad caelos,sedet ad dexteram Dei Patris omnipotentis,<br/><br/>
+inde venturus est iudicare vivos et mortuos.<br/><br/>
+Credo in Spiritum Sanctum,<br/><br/>
+sanctam Ecclesiam catholicam,<br/><br/>
+sanctorum communionem,remissionem peccatorum,<br/><br/>
+carnis resurrectionem,<br/><br/>
+vitam aeternam.<br/><br/>
+Amen.<br/><br/>
+
+<!-- This line embeds a youtube video player into the page, and then changes it to dimensions 0 x 0 to serve
+as "background music" for the page without actually showing profile visitors the origin.
+I connected it to a "Bible-reading prayer music radio", meaning that the music is more or less always
+unique (if that's how this radio operates, that is) -->
+<iframe width="0" height="0" src="https://www.youtube.com/embed/Qcf5PBbHBVM//?&;amp;;autoplay=1&;loop=1&;controls=1&mute=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy">
+</iframe>
+<style>
+    body {
+		<!-- What better background to appreciate God than a backdrop of the world he created for us? -->
+        background:url(https://68.media.tumblr.com/141451953092e8058c5b56bd2c0be883/tumblr_o27by5bsPq1tchrkco1_500.gif);
+        font-family: times new roman, serif;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .person img {
+		<!-- Affects the profile pictures of people in your friend's list, in order to not have a friend's colorful
+		user image detract from the intended feel of the page.
+		Note that this doesn't affect your own profile picture, which allowed me to use a realistic looking "wax seal"
+		for my pfp without it getting faded out like everyone else's.
+		If you *do* want your pfp to be affected too, just change ".person img {" to "img {" --->
+        filter: sepia(100%) hue-rotate(0deg) saturate(10);
+        filter: grayscale(50%);
+        mix-blend-mode: overlay;
+    }
+
+    .profile {
+		<!-- I chose parchment as the background for the actual profile page. This, paired with the other css stuff configured
+		makes it look sorta like you're reading a scroll -->
+        background:url(https://cdn.discordapp.com/attachments/776895924260569090/1128274063186472980/iu.png);
+    text-shadow: 0 0 5px black;
+    }
+
+    <!-- This stuff affects the left side of the page - profile picture, interests, contact options, etc -->
+    .profile .mood{ font-size: 0; }
+    .contact .inner a img {
+    font-size: 0;
+    }
+    .contact .inner a img:before {
+    font-size: 1em;
+    display: block
+    }
+    .contact .inner a:before {
+    /* specify each as ".contact .inner .f-row:nth-child(x) .f-col:nth-child(y) a:before" for individual icons */
+    content: "+"
+    }
+    .url-info { display: none; }
+    .profile .table-section { display: none; }
+
+    <!-- This stuff affects the right side of the page - about me, recent blog entries, etc -->
+    .blog-preview{font-size:0; text-shadow: 0 0 0px}
+    .blog-preview:before{
+        content: "'Proclamations' of 'II'"; font-size:.8rem; font-weight: bold; color: red;
+    }
+    .blurbs .heading{ font-size:0; }
+    .blurbs .heading:before{
+        content: "Pro Anima, Ex Fidelibus"; font-size:.8rem; font-weight:bold;
+        color: red; text-shadow: 0 0 0px red;
+    }
+    .blurbs .inner {
+        font-weight: bold;
+    }
+    .blurbs .inner .section:nth-child(1) h4 { font-size:0; }
+    .blurbs .inner .section:nth-child(1) h4:before {
+        content: "Credo"; font-size:.8rem;
+        color: red; text-shadow: 0 0 0px red;
+    }
+    .blurbs .inner .section:nth-child(2) h4 { font-size:0; }
+    .blurbs .inner .section:nth-child(2) h4:before {
+        content: "Veni, Creator Spiritus"; font-size:.8rem;
+        color: red; text-shadow: 0 0 0px red;
+    }
+    .friends .heading{ font-size: 0; }
+    .friends .heading:before{
+        content: "Colleagues"; font-size:.8rem; font-weight: bold; text-shadow: 0 0 0px;
+    }
+    .friends .inner:before{
+        content: "If II was a person, you might claim that "; font-size:.8rem; font-weight: bold;
+    }
+    .friends#comments .heading:before{
+        content: "Statements & Testimonials"; font-size:.8rem; font-weight: bold;
+    }
+.friends#comments .inner:before{
+        content: ""; font-size:.8rem; font-weight: bold;
+    }
+    
+</style>
